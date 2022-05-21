@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(7, 8, 91);
+    height: 100%;
+   
+}
+#Header{
+    text-align: center;
+    color: aliceblue;
+}
+
+.squares{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 13vw;
+  margin: 50px 0;
+  text-align: center;  
+    
+}
+
+div{
+    text-align: center;
+}
+
+#square-1,#square-2,#square-3,#square-4 {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    border-color: black;
+    margin: 30px;
+    border-width: 5px;
+    border-style: solid;
+    cursor: pointer;
+    
+  }
+  #square-1{
+    background-color: green;
+  }
+   #square-2{
+    background-color: red;
+  }
+  #square-3{
+    background-color: yellow;
+}
+    #square-4{
+    background-color: blue;
+}
