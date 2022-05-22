@@ -8,18 +8,26 @@
     <title>Memory Game</title>
 </head>
 <body>
-    <div>
-        <h1 id="Header">Press and key to start</h1>
-        <div class="sqaures">
-            <div id="square-1" onclick="onBoxClick" data-framework="aurelia"></div>
-            <div id="square-2" data-framework="aurelia"></div>
-        </div>
-        <div class="sqaures">
-            <div id="square-3" data-framework="aurelia"></div>
-            <div id="square-4" data-framework="aurelia"></div>
-        </div>
-       
-    </div>
     <script src="javascript/memory.js"></script>
+  
+    <audio class="blue" id="blueaudio" src="assets/blue.mp3"></audio>
+     <audio class="green" id="greenaudio" src="assets/green.mp3"></audio>
+     <audio class="red" id="greenaudio" src="assets/red.mp3"></audio>
+     <audio class="yellow" id="yellowaudio" src="assets/yellow.mp3"></audio>
+      <audio id="wrong" src="assets/wrong.mp3"></audio>
+      <div>
+        <h1><span id= "level" >Press Any Key To Start</span> <span id="xxx"></span></h1>
+         <div class="sqaures">
+             <div id="green" class="square-1 game" onClick="myFunc(this.id);"  data-framework="aurelia"></div>
+             <div id="red" class="square-2 game" onClick="myFunc(this.id);" data-framework="aurelia"></div>
+         </div>
+         <div class="sqaures">
+             <div id="yellow" class="square-3 game" onClick="myFunc(this.id);" data-framework="aurelia"></div>
+             <div id="blue" class="square-4 game" onClick="myFunc(this.id);" data-framework="aurelia"></div>
+         </div>
+        
+     </div>
+    <p id="demo"></p>
+    <p id="demo2"></p>
 </body>
 </html>
