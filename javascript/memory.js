@@ -45,3 +45,24 @@
 }
 
 
+function myFunc(id)
+            {
+					if(temp[c - 1] == id){
+						document.getElementById(id).style.backgroundColor  = "white";
+						setTimeout(function(){ document.getElementById(id).style.backgroundColor  = id}, 1000);
+						playSound(id);
+						c--;
+						document.getElementById("demo2").innerHTML = c;
+						if(c == 0)
+							setTimeout(function(){start()},2000);
+						
+					}else{
+						var audio = document.getElementById("wrong");
+						audio.play();
+						document.getElementById("level").innerHTML = "Game Over, Press Any Key To Restart!!";
+						document.getElementById("xxx").innerHTML = "";
+						
+					}
+			}
+	  
+
