@@ -78,3 +78,10 @@ function countMyself() {
 	 
 }
 
+
+function playSound(value){
+		var audio = document.getElementsByClassName(value)[0];
+		audio.play();
+
+	// I could have added the recordings each one by itself
+	}
